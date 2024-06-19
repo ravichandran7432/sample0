@@ -1,0 +1,24 @@
+class prime{
+    prime(int n){
+        if(n==0 && n==1){
+            System.out.println("Prime");
+        }else if(n%2==1){
+            System.out.println("Prime");
+        }else{
+            System.out.println("Not Prime");
+        }
+    }
+    prime(int n,int m){
+        if(n==0 && m==0 || n==1 && m==1){
+          System.out.println("Prime");
+        }else if(n%2==1 && m%2==1){
+            System.out.println("both are Prime");
+        }else{
+            System.out.println("both are Not Prime");
+        }
+    }
+    public static void main(String args[]){
+        prime obj=new prime(3);
+        prime obj1=new prime(7,7);
+    }
+}
